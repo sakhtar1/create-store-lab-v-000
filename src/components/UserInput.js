@@ -14,7 +14,8 @@ class UserInput extends Component {
 
   handleChange(event) {
     this.setState({
-      name: event.target.value,
+      username: event.target.value,
+      hometown: event.target.value,
     })
   }
   render() {
