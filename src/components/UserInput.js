@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class UserInput extends Component {
-  state= { name: ''};
+  state= { username: '', hometown: '' };
 
   handleSubmit(event) {
     event.preventDefault();
