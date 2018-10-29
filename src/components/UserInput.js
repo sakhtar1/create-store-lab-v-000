@@ -20,8 +20,10 @@ class UserInput extends Component {
     return(
       <div>
           <form onSubmit={(event) => this.handleSubmit(event)}>
-          <label>Restaurant</label>
-          <input type="name" onChange={(event) => this.handleChange(event)} value={this.state.name}/>
+          <label>User</label>
+          <input type="username" onChange={(event) => this.handleChange(event)} value={this.state.username}/>
+          <input type="hometown" onChange={(event) => this.handleChange(event)} value={this.state.hometown}/>
+
           <input type="submit" />
         </form>
       </div>
