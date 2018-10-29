@@ -6,12 +6,9 @@ class UserInput extends Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.store.dispatch({
-      type: 'ADD_USER',
-      user: {
-        username: this.state.username,
-        hometown: this.state.hometown
-      }
-    })
+      type: "ADD_USER",
+      user: this.state
+     });
     this.setState({
       username:'',
       hometown: '',
