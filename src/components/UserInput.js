@@ -5,9 +5,10 @@ class UserInput extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.addRestaurant(this.state.name);
+    this.props.addRestaurant({ this.state.username, this.state.hometown);
     this.setState({
-      name:'',
+      username:'',
+      hometown: ''
     })
   }
 
