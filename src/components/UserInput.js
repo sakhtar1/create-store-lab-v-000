@@ -8,7 +8,7 @@ class UserInput extends Component {
     this.props.addRestaurant({ this.state.username, this.state.hometown);
     this.setState({
       username:'',
-      hometown: ''
+      hometown: '',
     })
   }
 
